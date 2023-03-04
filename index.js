@@ -24,6 +24,7 @@ const myFirstPost = new instagramPost('Benita', 'Dance Video', 'https://tara.com
 console.log(myFirstPost)
 
 const mySecondPost = new instagramPost('Korty', 'Comedy', 'https://.com', 100, '5K likes')
+// console.log(mySecondPost)
 
 // QUESTION 3
 
@@ -53,6 +54,7 @@ function createJambScores(eng, govt, lit, crk) {
 }
 
 const scores = createJambScores(70, 85, 82, 94);
+console.log(scores)
 
 // Adding this object to the object created in (a) above
 
@@ -85,3 +87,21 @@ console.log(updatedInfo);
 const anotherInfo = {...myInfo}
 anotherInfo.state = 'Lagos State'
 console.log(anotherInfo)
+
+
+
+//  QUESTION 5 
+
+const presidentialCandidates = {
+  AAC: 'Omoleye Sowere',
+  ACCORD: 'Christopher Imumolen',
+  APC: 'Bola Ahmed Tinubu',
+  LP: 'Peter Obi',
+  NNPP: 'Rabiu Kwankwaso',
+  PDP: 'Atiku Abubakar'
+}
+
+for (candidate in presidentialCandidates) {
+  // console.log(candidate + " "+ presidentialCandidates[candidate])
+  console.log(presidentialCandidates[candidate] + " is the presidential candidate of " + candidate)
+}
